@@ -6,27 +6,27 @@ namespace TestProject
     public class Tests
     {
         [Test]
-        public void GivenMaxInFirst_WhenMaxFloatCheck_ReturnFirst()
+        public void GivenMaxInFirst_WhenMaxStringCheck_ReturnFirst()
         {
-            float a = 30.16f, b = 20.29f, c = 10.30f;
+            string a = "October", b = "June", c = "May";
             MaxFinder finder = new MaxFinder();
-            float result = finder.FindMaxFloat(a, b, c);
+            string result = finder.FindMaxString(a, b, c);
             Assert.AreEqual(a, result);
         }
         [Test]
-        public void GivenMaxInSecond_WhenMaxFloatCheck_ReturnSecond_()
+        public void GivenMaxInSecond_WhenMaxStringCheck_ReturnSecond_()
         {
-            float a = 30.16f, b = 20.29f, c = 10.30f;
+            string a = "October", b = "June", c = "May";
             MaxFinder finder = new MaxFinder();
-            float result = finder.FindMaxFloat(b, a, c);
+            string result = finder.FindMaxString(b, a, c);
             Assert.AreEqual(a, result);
         }
         [Test]
-        public void GivenMaxInLast_WhenMaxFloatCheck_ReturnLast()
+        public void GivenMaxInLast_WhenMaxStringCheck_ReturnLast()
         {
-            float a = 30.16f, b = 20.29f, c = 10.30f;
+            string a = "October", b = "June", c = "May";
             MaxFinder finder = new MaxFinder();
-            float result = finder.FindMaxFloat(c, b, a);
+            string result = finder.FindMaxString(c, b, a);
             Assert.AreEqual(a, result);
         }
     }
