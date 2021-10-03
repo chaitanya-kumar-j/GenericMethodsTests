@@ -8,25 +8,25 @@ namespace TestProject
         [Test]
         public void GivenMaxInFirst_WhenMaxFloatCheck_ReturnFirst()
         {
-            int a = 30, b = 20, c = 10;
+            float a = 30.16f, b = 20.29f, c = 10.30f;
             MaxFinder finder = new MaxFinder();
-            float result = finder.FindMaxInt(a, b, c);
+            float result = finder.FindMaxFloat(a, b, c);
             Assert.AreEqual(a, result);
         }
         [Test]
         public void GivenMaxInSecond_WhenMaxFloatCheck_ReturnSecond_()
         {
-            int a = 30, b = 20, c = 10;
+            float a = 30.16f, b = 20.29f, c = 10.30f;
             MaxFinder finder = new MaxFinder();
-            int result = finder.FindMaxInt(b, a, c);
+            float result = finder.FindMaxFloat(b, a, c);
             Assert.AreEqual(a, result);
         }
         [Test]
         public void GivenMaxInLast_WhenMaxFloatCheck_ReturnLast()
         {
-            int a = 30, b = 20, c = 10;
+            float a = 30.16f, b = 20.29f, c = 10.30f;
             MaxFinder finder = new MaxFinder();
-            int result = finder.FindMaxInt(c, b, a);
+            float result = finder.FindMaxFloat(c, b, a);
             Assert.AreEqual(a, result);
         }
     }
